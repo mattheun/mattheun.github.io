@@ -11,15 +11,6 @@
             text-align: left;
         }
 
-        .header>p {
-            font-size: 1.2em;
-            margin-bottom: 26px;
-        }
-
-        h1 {
-            font-size: 2em;
-        }
-
         .fa-icon {
             color: rgb(86, 86, 86);
             padding: 0 20px 0 0;
@@ -27,18 +18,67 @@
 
         #social {
             display: flex; 
-            margin-bottom: 24px;
         }
 
         /* added class for two columns layout */
-        @media screen and (max-width: 1234px) {
+        @media screen and (max-width: 414px) {
+            .header>p {
+                font-size: 3em;
+                margin-bottom: 60px;
+            }
+
+            h1 {
+                font-size: 4em;
+            }
+
             .two-columns {
                 display: block;
-                width: 620px;
+                width: 100%;
+            }
+
+            .fa-icon {
+                font-size: 3em;
+            }
+
+            #social {
+                margin-bottom: 60px;
+            }
+        }
+
+        @media screen and (min-width: 415px) and (max-width: 1233px) {
+            .header>p {
+                font-size: 1.2em;
+                margin-bottom: 26px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .two-columns {
+                display: block;
+                width: 100%;
+            }
+
+            .fa-icon {
+                font-size: 2em;
+            }
+
+            #social {
+                margin-bottom: 20px;
             }
         }
 
         @media screen and (min-width: 1234px) {
+            .header>p {
+                font-size: 1.2em;
+                margin-bottom: 26px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
             .two-columns {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -53,6 +93,14 @@
             /* added class for second column */
             .second-column {
                 grid-column: 2 / 3;
+            }
+
+            .fa-icon {
+                font-size: 2em;
+            }
+
+            #social {
+                margin-bottom: 20px;
             }
         }
 
@@ -90,13 +138,13 @@
                 <p>Computer Scientist (InfoVis + HCI + AI)</p>
                 <div id="social">
                     <a href="https://www.linkedin.com/in/matt-heun-hong" target="_blank">
-                        <i class="fa-icon fab fa-linkedin fa-2x"></i>
+                        <i class="fa-icon fab fa-linkedin"></i>
                     </a>
                     <a href="https://www.twitter.com/matt1hong" target="_blank">
-                        <i class="fa-icon fab fa-twitter fa-2x"></i>
+                        <i class="fa-icon fab fa-twitter"></i>
                     </a>
                     <a href="https://medium.com/@mattianhong" target="_blank">
-                        <i class="fa-icon fab fa-medium fa-2x"></i>
+                        <i class="fa-icon fab fa-medium"></i>
                     </a>
                     </div>
             </div>
