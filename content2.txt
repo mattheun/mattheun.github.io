@@ -1,6 +1,14 @@
 
 -----------
 
+Matt has a research background in visual psychology,
+studying how people can both interpret and 
+misinterpret visual representations of data.
+
+See \illusion
+
+-----------
+
 Matt previously interned at 
 NASA Jet Propulsion Laboratory. 
 He was a visualization developer for 

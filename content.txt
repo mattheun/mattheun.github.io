@@ -16,11 +16,3 @@ user-centered design to help people
 collect, understand, and present data. 
 
 See \scholastic
-
------------
-
-Matt has a research background in visual psychology,
-studying how people can both interpret and 
-misinterpret visual representations of data.
-
-See \illusion
