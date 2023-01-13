@@ -15,46 +15,58 @@
         .fa-icon {
             color: rgb(86, 86, 86);
             padding: 0 20px 0 0;
+            font-size: 2em;
         }
 
         #social {
-            display: flex; 
+            display: flex;
+            margin-bottom: 36px;
         }
 
 
-        @media screen and (max-width: 1233px) {
-            .header>p {
-                font-size: 1.2em;
-                margin-bottom: 26px;
+        .header>p {
+            font-size: 1.2em;
+            margin-bottom: 26px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        @media screen and (max-width: 429px) {
+
+            .column>.content {
+                font-size: 0.6em;
             }
 
-            h1 {
-                font-size: 2em;
+            .column {
+                margin: 0 12px 0 12px;
             }
+
+        }
+
+        @media screen and (min-width: 430px) {
+
+            .column>.content {
+                font-size: 1em;
+            }
+
+            .column {
+                margin: 0 20px 0 40px;
+            }
+
+        }
+
+        @media screen and (max-width: 1233px) {
 
             .two-columns {
                 display: block;
                 width: 100%;
             }
 
-            .fa-icon {
-                font-size: 2em;
-            }
-
-            #social {
-                margin-bottom: 36px;
-            }
         }
 
         @media screen and (min-width: 1234px) {
-            .header>p {
-                font-size: 1.2em;
-                margin-bottom: 26px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
 
             .two-columns {
                 display: grid;
@@ -72,23 +84,11 @@
                 grid-column: 2 / 3;
             }
 
-            .fa-icon {
-                font-size: 2em;
-            }
-
-            #social {
-                margin-bottom: 24px;
-            }
         }
 
         .column>.content {
-            font-size: 1em;
             display: block;
             line-height: 1.6;
-        }
-
-        .column {
-            margin: 0 20px 0 40px;
         }
 
         /* added class for hyperlink */
@@ -102,7 +102,6 @@
         .hyperlink:hover {
             text-decoration: underline;
         }
-        
     </style>
 </head>
 
@@ -123,7 +122,7 @@
                     <a href="https://medium.com/@mattianhong" target="_blank">
                         <i class="fa-icon fab fa-medium"></i>
                     </a>
-                    </div>
+                </div>
             </div>
             <div id="content1" class="content"></div>
         </div>
