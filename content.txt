@@ -3,7 +3,7 @@ The University of North Carolina at Chapel Hill,
 where he is a member of VisuaLab.
 
 His research centers around human-AI collaboration for 
-visualization and visual analytics.
+data visualization and visual analytics.
 
 Matt studied Mathematics and Computer Science at 
 Northwestern University.
