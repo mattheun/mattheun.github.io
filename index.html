@@ -18,6 +18,11 @@
             font-size: 2em;
         }
 
+        .fa-link {
+            font-size: 0.8em;
+            padding: 0 0.3em 0 0;
+        }
+
         #social {
             display: flex;
             margin-bottom: 36px;
@@ -175,7 +180,7 @@
                     const linkUrl = curly[0][1];
                     const linkText = curly[1][1];
                     // Add the tag and link to the citations object
-                    citations[tag] = `<a href="${linkUrl}" class="hyperlink" target="_blank">${linkText}</a>`;
+                    citations[tag] = `<a href="${linkUrl}" class="hyperlink" target="_blank"><i class="fa-icon fa-solid fa-link"></i>${linkText}</a>`;
                 });
 
                 return citations;
