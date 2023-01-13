@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matt Hong</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Source Code Pro', monospace;
+            color: rgb(86, 86, 86);
+            text-align: left;
+        }
+
+        .header>p {
+            font-size: 1.2em;
+            margin-bottom: 26px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        /* added class for two columns layout */
+        @media screen and (max-width: 1234px) {
+            .two-columns {
+                display: block;
+                width: 620px;
+            }
+        }
+
+        @media screen and (min-width: 1234px) {
+            .two-columns {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 0px;
+            }
+
+            /* added class for first column */
+            .first-column {
+                grid-column: 1 / 2;
+            }
+
+            /* added class for second column */
+            .second-column {
+                grid-column: 2 / 3;
+            }
+        }
+
+        .column>.content {
+            font-size: 1em;
+            display: block;
+            line-height: 1.6;
+        }
+
+        .column {
+            margin: 0 20px 0 40px;
+        }
+
+        /* added class for hyperlink */
+        .hyperlink {
+            /* color: #c3aa3c; */
+            color: inherit;
+            font-style: italic;
+            text-decoration: none;
+        }
+
+        .hyperlink:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="two-columns">
+        <div class="first-column column">
+            <div class="header">
+                <h1>Matt-Heun Hong</h1>
+                <p>Computer Scientist (InfoVis + HCI + AI)</p>
+            </div>
+            <div id="content1" class="content"></div>
+        </div>
+        <div class="second-column column">
+            <div id="content2" class="content"></div>
+        </div>
+    </div>
+
+    <script>
+        function styleContent(data) {
+            data = data.replace(/\n/g, "<br>");
+            data = data.replace(/Northwestern University/g,
+                "<span style='color: #4E2A84;'>Northwestern University</span>"
+            );
+            data = data.replace(/University of North Carolina at Chapel Hill/g,
+                "<span style='color: #4B9CD3;'>University of North Carolina at Chapel Hill</span>"
+            );
+            data = data.replace(/NASA Jet Propulsion Laboratory/g,
+                "<span style='color: #FC3D21;'>NASA Jet Propulsion Laboratory</span>"
+            );
+            data = data.replace(/NYC MySchools/g,
+                "<span style='color: #4ee4b3;'>NYC MySchools</span>"
+            );
+            return data;
+        }
+
+        function linkCitations(citations, content) {
+            for (const tag in citations) {
+                content = content.replace(`\\${tag}`, citations[tag]);
+            }
+            return content
+        }
+
+        fetch('cite.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Create an object of citations
+                const citations = {};
+                // Loop through each line of the cite.txt file
+                data.split("\n").forEach(line => {
+                    // Extract the tag and link from the line
+                    const curly = [...line.matchAll(/{(.*?)}/g)];
+                    const tag = line.match(/^\\(\w+)/)[1];
+                    const linkUrl = curly[0][1];
+                    const linkText = curly[1][1];
+                    // Add the tag and link to the citations object
+                    citations[tag] = `<a href="${linkUrl}" class="hyperlink" target="_blank">${linkText}</a>`;
+                });
+
+                return citations;
+            }).then(citations => {
+                fetch('content.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        console.log(citations);
+                        data = linkCitations(citations, data)
+                        data = styleContent(data)
+                        document.getElementById('content1').innerHTML = data;
+                    });
+
+                fetch('content2.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        data = linkCitations(citations, data)
+                        data = styleContent(data)
+                        document.getElementById('content2').innerHTML = data;
+                    });
+            })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+\scholastic{https://dl.acm.org/doi/abs/10.1145/3526113.3545681}{Scholastic: Graphical Human-AI Collaboration for Inductive and Interpretive Text Analysis. ACM UIST 2022.}
+\illusion{https://arxiv.org/pdf/2108.03766.pdf}{The Weighted Average Illusion: Biases in Perceived Mean Position in Scatterplots. IEEE VIS 2021.}

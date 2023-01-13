@@ -1,0 +1,26 @@
+Matt is a PhD student in Computer Science at
+The University of North Carolina at Chapel Hill, 
+where he is a member of VisuaLab.
+
+His research centers around human-AI collaboration for 
+visualization and visual analytics.
+
+Matt studied Mathematics and Computer Science at 
+Northwestern University.
+
+-----------
+
+Matt builds tools that harness 
+human-in-the-loop algorithms and
+user-centered design to help people 
+collect, understand, and present data. 
+
+\scholastic
+
+-----------
+
+Matt has a research background in visual psychology,
+studying how people can both interpret---and 
+misinterpret---visual representations of data.
+
+\illusion
