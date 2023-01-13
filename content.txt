@@ -11,8 +11,8 @@ Northwestern University.
 -----------
 
 Matt builds tools that harness 
-human-in-the-loop algorithms and
-<i class="fa-solid fa-users"></i> user-centered design to help people 
+<i class="fa-solid fa-person-walking-arrow-loop-left"></i> human-in-the-loop algorithms and
+user-centered design to help people 
 collect, understand, and present data. 
 
 See \scholastic

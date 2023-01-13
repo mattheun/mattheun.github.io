@@ -12,13 +12,13 @@ See \illusion
 Matt previously interned at 
 NASA Jet Propulsion Laboratory. 
 He was a visualization developer for 
-the <i class="fa-solid fa-rocket"></i> Rover Operations team.
+the Rover Operations team.
 
 -----------
 
 Matt was involved in the development of 
 \myschools, the centralized data platform for 
-all New York City <i class="fa-sharp fa-solid fa-school"></i> public schools. 
+all New York City public schools. 
 
 The website helps families and educators make 
 informed decisions for each student's academic journey.
