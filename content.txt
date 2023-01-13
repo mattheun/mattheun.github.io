@@ -20,7 +20,7 @@ collect, understand, and present data.
 -----------
 
 Matt has a research background in visual psychology,
-studying how people can both interpret---and 
-misinterpret---visual representations of data.
+studying how people can both interpret and 
+misinterpret visual representations of data.
 
 \illusion
