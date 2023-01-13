@@ -20,6 +20,16 @@
             font-size: 2em;
         }
 
+        .fa-icon {
+            color: rgb(86, 86, 86);
+            padding: 0 20px 0 0;
+        }
+
+        #social {
+            display: flex; 
+            margin-bottom: 24px;
+        }
+
         /* added class for two columns layout */
         @media screen and (max-width: 1234px) {
             .two-columns {
@@ -67,6 +77,7 @@
         .hyperlink:hover {
             text-decoration: underline;
         }
+        
     </style>
 </head>
 
@@ -77,6 +88,17 @@
             <div class="header">
                 <h1>Matt-Heun Hong</h1>
                 <p>Computer Scientist (InfoVis + HCI + AI)</p>
+                <div id="social">
+                    <a href="https://www.linkedin.com/in/matt-heun-hong" target="_blank">
+                        <i class="fa-icon fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://www.twitter.com/matt1hong" target="_blank">
+                        <i class="fa-icon fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://medium.com/@mattianhong" target="_blank">
+                        <i class="fa-icon fab fa-medium fa-2x"></i>
+                    </a>
+                    </div>
             </div>
             <div id="content1" class="content"></div>
         </div>
@@ -84,6 +106,8 @@
             <div id="content2" class="content"></div>
         </div>
     </div>
+
+    <script src="https://kit.fontawesome.com/4673562ab7.js" crossorigin="anonymous"></script>
 
     <script>
         function styleContent(data) {

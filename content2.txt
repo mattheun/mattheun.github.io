@@ -9,7 +9,7 @@ the Rover Operations team.
 -----------
 
 Matt was involved in the development of 
-NYC MySchools, the centralized data platform for 
+\myschools, the centralized data platform for 
 all New York City public schools. 
 
 The website helps families and educators make 
