@@ -4,8 +4,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt Hong - UNC Computer Science</title>
-    <meta name="description" content="Matt builds tools that harness human-in-the-loop algorithms and user-centered design to help people collect, understand, and present data. ">
-    <meta name="keywords" content="human-in-the-loop, human-computer interaction, human-centered AI, visualization, visual analytics, interactive machine learning, user-centered design, cognitive psychology, Matt, research, PhD student, PhD, Computer Science, UNC, JPL, NASA, MySchools, Scholastic, Weighted Average Illusion, Northwestern">
+    <meta name="description"
+        content="Matt builds tools that harness human-in-the-loop algorithms and user-centered design to help people collect, understand, and present data. ">
+    <meta name="keywords"
+        content="human-in-the-loop, human-computer interaction, human-centered AI, visualization, visual analytics, interactive machine learning, user-centered design, cognitive psychology, Matt, research, PhD student, PhD, Computer Science, UNC, JPL, NASA, MySchools, Scholastic, Weighted Average Illusion, Northwestern">
     <style>
         body {
             background-color: #fff;
@@ -36,6 +38,34 @@
             margin-bottom: 26px;
         }
 
+        .header-container {
+            display: grid;
+            grid-template-areas:
+                "header profile-pic";
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        #profile-pic {
+            grid-area: profile-pic;
+        }
+
+        #profile-pic {
+            width: 156px;
+            height: 156px;
+            border-radius: 50%;
+            overflow: hidden;
+            /* this will hide any part of the image that extends outside the circle */
+            margin: 28px
+        }
+
+        #profile-pic img {
+            width: 100%;
+            height: auto;
+        }
+
         h1 {
             font-size: 2em;
         }
@@ -46,7 +76,8 @@
                 font-size: 1.5em;
             }
 
-            .column>.content, .fa-link {
+            .column>.content,
+            .fa-link {
                 font-size: 0.6em;
             }
 
@@ -120,23 +151,28 @@
 
     <div class="two-columns">
         <div class="first-column column">
-            <div class="header">
-                <h1>Matt-Heun Hong</h1>
-                <p>Computer Scientist <br>InfoVis + HCI + AI</p>
-                <div id="social">
-                    <a href="https://scholar.google.com/citations?user=0-t0iuIAAAAJ&hl=en" target="_blank">
-                        <i class="fa-icon fa-brands fa-google"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/matt-heun-hong" target="_blank">
-                        <i class="fa-icon fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.twitter.com/matt1hong" target="_blank">
-                        <i class="fa-icon fab fa-twitter"></i>
-                    </a>
-                    <a href="https://medium.com/@mattianhong" target="_blank">
-                        <i class="fa-icon fab fa-medium"></i>
-                    </a>
+            <div class="header-container">
+                <div class="header">
+                    <h1>Matt-Heun Hong</h1>
+                    <p>Computer Scientist <br>InfoVis + HCI + AI</p>
+                    <div id="social">
+                        <a href="https://scholar.google.com/citations?user=0-t0iuIAAAAJ&hl=en" target="_blank">
+                            <i class="fa-icon fa-brands fa-google"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/matthhong" target="_blank">
+                            <i class="fa-icon fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.twitter.com/matthhong" target="_blank">
+                            <i class="fa-icon fab fa-twitter"></i>
+                        </a>
+                        <a href="https://medium.com/@mattianhong" target="_blank">
+                            <i class="fa-icon fab fa-medium"></i>
+                        </a>
+                    </div>
                 </div>
+                <!-- <div id="profile-pic">
+                    <img src="profile-pic.JPG" alt="Matt Hong's Portrait">
+                </div> -->
             </div>
             <div id="content1" class="content"></div>
         </div>
