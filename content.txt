@@ -1,5 +1,3 @@
-mhh [at] cs [dot] unc [dot] edu
-
 Matt is a PhD student in <i class="fa-solid fa-robot"></i> Computer Science at
 The University of North Carolina at Chapel Hill, 
 where he is a member of VisuaLab.
